@@ -3,79 +3,101 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CDMAN ビジネス提案書</title>
+    <title>CDMAN | The Physical Portal</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap" rel="stylesheet">
     <style>
-        /* デザインの基本設定 */
-        body { background-color: #0f172a; color: #f8fafc; font-family: sans-serif; margin: 0; padding: 20px; line-height: 1.6; }
-        .container { max-width: 900px; margin: 0 auto; }
-        
-        /* スライド風のカード */
-        .card { background: #1e293b; border-radius: 12px; padding: 40px; margin-bottom: 30px; border: 1px solid #334155; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1); }
-        h1 { color: #DEFF9A; font-size: 3rem; margin: 0; }
-        h2 { color: #DEFF9A; border-bottom: 2px solid #DEFF9A; padding-bottom: 10px; margin-top: 0; }
-        .accent { color: #DEFF9A; font-weight: bold; }
-        
-        /* 表のデザイン */
-        table { width: 100%; border-collapse: collapse; margin-top: 20px; background: #0f172a; border-radius: 8px; overflow: hidden; }
-        th, td { padding: 15px; text-align: left; border-bottom: 1px solid #334155; }
-        th { background-color: #334155; color: #DEFF9A; }
-        
-        /* リスト */
-        ul { padding-left: 20px; }
-        li { margin-bottom: 10px; }
+        body { font-family: 'Inter', sans-serif; background-color: #000; color: #fff; }
+        .gradient-text { background: linear-gradient(90deg, #DEFF9A, #a3e635); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+        .glass { background: rgba(255, 255, 255, 0.03); backdrop-filter: blur(10px); border: 1px solid rgba(255, 255, 255, 0.05); }
+        .hero-bg { background: radial-gradient(circle at 50% 50%, #1e293b 0%, #000 100%); }
     </style>
 </head>
-<body>
+<body class="hero-bg">
 
-<div class="container">
-    <div class="card" style="text-align: center;">
-        <h1>CD<span style="color:#fff">MAN</span></h1>
-        <p style="font-size: 1.5rem; color: #94a3b8;">PHYSICAL KEY × DIGITAL CONTENT</p>
-        <p>「持ってる人だけが楽しめる」新しいグッズ体験</p>
-    </div>
+    <div class="max-w-6xl mx-auto px-6 py-20">
+        <header class="text-center mb-32">
+            <h1 class="text-8xl font-black mb-6 tracking-tighter">CD<span class="gradient-text">MAN</span></h1>
+            <p class="text-2xl text-gray-400 font-light tracking-widest uppercase">The Physical Portal to Digital Worlds</p>
+            <div class="mt-10 h-1 w-24 bg-lime-400 mx-auto"></div>
+        </header>
 
-    <div class="card">
-        <h2>1. CDMANとは何か？</h2>
-        <ul>
-            <li><span class="accent">物理的な「鍵」：</span> スマホをかざすだけで限定ページが即座に起動（アプリ不要）。</li>
-            <li><span class="accent">先行配信の仕組み：</span> YouTube公開前に、新曲をキーホルダー所有者だけに最速公開。</li>
-            <li><span class="accent">秘密の共有：</span> SNSには書けない「限定ボイス日記」や「裏話」を配信。</li>
-        </ul>
-    </div>
+        <section class="grid grid-cols-1 md:grid-cols-2 gap-12 mb-32">
+            <div class="glass p-10 rounded-3xl">
+                <h2 class="text-3xl font-bold mb-6 text-gray-200">The Problem</h2>
+                <p class="text-gray-400 leading-relaxed text-lg">
+                    現在のファンビジネスは「売切型」の物販に依存しています。一度売れば終わり。クリエイターは常に新しい在庫リスクを抱え、ファンは飽きていく。デジタルコンテンツへの動線はQRコードという「味気ない事務作業」でしかありません。
+                </p>
+            </div>
+            <div class="glass p-10 rounded-3xl border-lime-400/20">
+                <h2 class="text-3xl font-bold mb-6 gradient-text">The Solution</h2>
+                <p class="text-gray-400 leading-relaxed text-lg">
+                    NFCキーホルダーを「物理的な鍵」として再定義。スマホをかざす「儀式」が、限定ボイス、未公開楽曲、先行配信という「聖域」への扉を開きます。物理的な所有欲と、無限のデジタル体験を融合させます。
+                </p>
+            </div>
+        </section>
 
-    <div class="card">
-        <h2>2. クリエイターが儲かる仕組み</h2>
-        <table>
-            <tr>
-                <th>項目</th>
-                <th>内容</th>
-                <th>メリット</th>
-            </tr>
-            <tr>
-                <td>初期販売</td>
-                <td>キーホルダー本体の販売</td>
-                <td>在庫リスクなし（受注生産可）</td>
-            </tr>
-            <tr>
-                <td>コンテンツ更新</td>
-                <td>パスワード（デジタルキー）販売</td>
-                <td>利益率100%の追加収益</td>
-            </tr>
-            <tr>
-                <td><span class="accent">更新費用</span></td>
-                <td><span class="accent">250円 × 販売個数</span></td>
-                <td>売れた分だけ払う「共生型」</td>
-            </tr>
-        </table>
-    </div>
+        <section class="mb-32">
+            <h2 class="text-5xl font-black mb-12 text-center">Business <span class="gradient-text">Engine</span></h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="p-8 text-center">
+                    <div class="text-sm uppercase tracking-widest text-gray-500 mb-2">初期収益</div>
+                    <div class="text-4xl font-bold mb-4">Device Sales</div>
+                    <p class="text-gray-400">受注生産によるノーリスクな物理納品。まず「鍵」をファンの手に渡します。</p>
+                </div>
+                <div class="p-8 text-center border-x border-gray-800">
+                    <div class="text-sm uppercase tracking-widest text-lime-400 mb-2">継続収益</div>
+                    <div class="text-4xl font-bold mb-4">Digital Key</div>
+                    <p class="text-gray-400">クリエイターがパスワードを販売。利益率100%のデジタルコンテンツ市場を創出。</p>
+                </div>
+                <div class="p-8 text-center">
+                    <div class="text-sm uppercase tracking-widest text-gray-500 mb-2">システム収益</div>
+                    <div class="text-4xl font-bold mb-4">¥250 / Unit</div>
+                    <p class="text-gray-400">更新手数料は「発行数×250円」。配布数が増えるほど1回の更新価値が自動で跳ね上がるモデル。</p>
+                </div>
+            </div>
+        </section>
 
-    <div class="card" style="text-align: center;">
-        <h2>3. 実績と信頼</h2>
-        <p style="font-size: 4rem; margin: 20px 0; color: #DEFF9A;">25%</p>
-        <p style="font-size: 1.2rem;">20人規模のライブで5個即完売！<br>「4人に1人が買う」高反応なマーケットを実証済み。</p>
+        <section class="glass p-16 rounded-3xl mb-32 text-center">
+            <h2 class="text-2xl uppercase tracking-tighter text-gray-500 mb-4">Real World Data</h2>
+            <div class="text-9xl font-black gradient-text mb-6">25%</div>
+            <p class="text-3xl font-bold text-white mb-4">驚異的な購入転換率</p>
+            <p class="text-gray-400 max-w-2xl mx-auto text-lg">
+                20人規模のライブイベントで5個が即完売。4人に1人が「物理的な鍵」に価値を感じ、財布を開きました。この熱狂は、数万人規模のVTuber市場で爆発的な数字に変わります。
+            </div>
+        </section>
+
+        <section class="mb-32">
+            <h2 class="text-4xl font-black mb-16 text-center italic">Future Roadmap</h2>
+            <div class="space-y-12">
+                <div class="flex items-center gap-10">
+                    <div class="text-6xl font-black text-gray-800">01</div>
+                    <div>
+                        <h3 class="text-2xl font-bold">先行配信・限定ボイスの独占提供</h3>
+                        <p class="text-gray-400">YouTube公開前の「最速体験」をキーホルダー所有者だけの特権に。</p>
+                    </div>
+                </div>
+                <div class="flex items-center gap-10">
+                    <div class="text-6xl font-black text-gray-800">02</div>
+                    <div>
+                        <h3 class="text-2xl font-bold">デジタルファンクラブ会員証</h3>
+                        <p class="text-gray-400">物理キーが、月額サブスクリプションへの強力な導線として機能。</p>
+                    </div>
+                </div>
+                <div class="flex items-center gap-10">
+                    <div class="text-6xl font-black text-gray-800">03</div>
+                    <div>
+                        <h3 class="text-2xl font-bold">コンテンツ・プラットフォーム化</h3>
+                        <p class="text-gray-400">全ての更新を中央管理し、クリエイターが「更新ボタン1つ」で収益化できるインフラへ。</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer class="text-center py-20 border-t border-gray-900">
+            <p class="text-gray-500">© 2026 CDMAN Project. All rights reserved.</p>
+        </footer>
     </div>
-</div>
 
 </body>
 </html>
-
